@@ -1,0 +1,497 @@
+Sure, Amulya. Below is a **single `index.html` file** with all the styling included. You can copy it directly into a file named `index.html` and open it in your browser.
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amulya | My Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f7fb;
+            color: #222;
+        }
+
+        /* Navigation */
+        nav {
+            background: #111827;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav h2 {
+            color: #38bdf8;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav ul li a:hover {
+            color: #38bdf8;
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 100px 20px 50px;
+            background: linear-gradient(135deg, #0f172a, #2563eb);
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero h3 {
+            font-size: 25px;
+            margin-bottom: 20px;
+            color: #dbeafe;
+        }
+
+        .hero p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #e2e8f0;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #38bdf8;
+            color: #0f172a;
+            padding: 13px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: white;
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 8%;
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .title h2 {
+            font-size: 36px;
+            color: #111827;
+            margin-bottom: 10px;
+        }
+
+        .title p {
+            color: #64748b;
+        }
+
+        /* About */
+        .about {
+            background: white;
+        }
+
+        .about-content {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .about-content p {
+            font-size: 18px;
+            color: #475569;
+            line-height: 1.8;
+        }
+
+        /* Education */
+        .education {
+            background: #f1f5f9;
+        }
+
+        .education-card {
+            max-width: 700px;
+            margin: auto;
+            background: white;
+            padding: 35px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            border-top: 5px solid #2563eb;
+        }
+
+        .education-card h3 {
+            font-size: 24px;
+            color: #111827;
+            margin-bottom: 15px;
+        }
+
+        .education-card p {
+            color: #64748b;
+            margin: 8px;
+        }
+
+        /* Interests */
+        .interests {
+            background: white;
+        }
+
+        .cards {
+            max-width: 1000px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            padding: 35px 25px;
+            background: #f8fafc;
+            border-radius: 15px;
+            text-align: center;
+            border: 1px solid #e2e8f0;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .card .icon {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #111827;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #64748b;
+            line-height: 1.6;
+        }
+
+        /* Skills */
+        .skills {
+            background: #f1f5f9;
+        }
+
+        .skill-list {
+            max-width: 800px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill {
+            background: #111827;
+            color: white;
+            padding: 12px 22px;
+            border-radius: 25px;
+        }
+
+        .skill:hover {
+            background: #2563eb;
+        }
+
+        /* Contact */
+        .contact {
+            background: #111827;
+            color: white;
+            text-align: center;
+        }
+
+        .contact .title h2 {
+            color: white;
+        }
+
+        .contact .title p {
+            color: #cbd5e1;
+        }
+
+        .contact p {
+            margin: 12px;
+            color: #cbd5e1;
+            font-size: 17px;
+        }
+
+        /* Footer */
+        footer {
+            background: #020617;
+            color: #94a3b8;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+
+            nav {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav ul {
+                gap: 12px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            nav ul li a {
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            .hero h3 {
+                font-size: 20px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 60px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>Amulya</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#interests">Interests</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h1>Hello, I'm <span>Amulya</span></h1>
+
+            <h3>Computer Science Engineering Student</h3>
+
+            <p>
+                I am a 2nd year Engineering student at JITD College,
+                Davangere. I love travelling, exploring new places,
+                learning new things and discovering new experiences.
+            </p>
+
+            <a href="#about" class="button">Know More About Me</a>
+
+        </div>
+
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+
+        <div class="title">
+            <h2>About Me</h2>
+            <p>A little introduction about myself</p>
+        </div>
+
+        <div class="about-content">
+
+            <p>
+                Hi! My name is <strong>Amulya</strong>. I am currently
+                pursuing my second year of Engineering in
+                <strong>Computer Science and Engineering (CSE)</strong>
+                at <strong>JITD College, Davangere</strong>.
+            </p>
+
+            <br>
+
+            <p>
+                I am curious about technology and enjoy learning new
+                concepts. Outside academics, I love travelling and
+                exploring new places. I believe that every journey
+                gives us an opportunity to learn something new.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Education -->
+    <section class="education" id="education">
+
+        <div class="title">
+            <h2>Education</h2>
+            <p>My academic journey</p>
+        </div>
+
+        <div class="education-card">
+
+            <h3>Bachelor of Engineering</h3>
+
+            <p><strong>Branch:</strong> Computer Science and Engineering</p>
+
+            <p><strong>College:</strong> JITD College, Davangere</p>
+
+            <p><strong>Year:</strong> 2nd Year</p>
+
+        </div>
+
+    </section>
+
+    <!-- Interests -->
+    <section class="interests" id="interests">
+
+        <div class="title">
+            <h2>My Interests</h2>
+            <p>Things I love to do</p>
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <div class="icon">💻</div>
+
+                <h3>Technology</h3>
+
+                <p>
+                    I enjoy learning about computers, programming
+                    and new technologies.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <div class="icon">✈️</div>
+
+                <h3>Travelling</h3>
+
+                <p>
+                    I love travelling to different places and
+                    experiencing different cultures and environments.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <div class="icon">🌎</div>
+
+                <h3>Exploring</h3>
+
+                <p>
+                    I enjoy exploring new places, trying new things
+                    and creating memorable experiences.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Skills -->
+    <section class="skills" id="skills">
+
+        <div class="title">
+            <h2>My Skills</h2>
+            <p>Things I am learning and developing</p>
+        </div>
+
+        <div class="skill-list">
+
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">C Programming</span>
+            <span class="skill">Python</span>
+            <span class="skill">Problem Solving</span>
+            <span class="skill">Communication</span>
+            <span class="skill">Learning</span>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+
+        <div class="title">
+            <h2>Contact Me</h2>
+            <p>Let's connect!</p>
+        </div>
+
+        <p>👩‍💻 Amulya</p>
+        <p>🎓 CSE 2nd Year Engineering Student</p>
+        <p>🏫 JITD College, Davangere</p>
+        <p>🌍 Traveller & Explorer</p>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Amulya | Personal Portfolio
+        </p>
+
+    </footer>
+
+</body>
+</html>
+```
